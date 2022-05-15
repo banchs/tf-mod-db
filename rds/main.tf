@@ -31,7 +31,7 @@ resource "random_password" "password" {
 }
 
 resource "aws_secretsmanager_secret" "rdsCredentials" {
-  name = "rdsCredentials"
+  name = "rdsCredentials-${var.env}"
 }
 
 
